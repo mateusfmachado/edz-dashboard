@@ -22,7 +22,7 @@ class DetalhesProduto extends Component {
         nome: props.produto ? props.produto.titulo : "",
         disponibilidade: props.produto ? ( props.produto.disponibilidade ? "disponivel" : "indisponivel" ) : "",
         descricao: props.produto ? props.produto.descricao : "",
-        categoria: props.produto ? props.produto.categoria : "",
+        categoria: props.produto ? (props.produto.categoria._id || props.produto.categoria) : "",
         fotos: props.produto ? props.produto.fotos : "",
         preco: props.produto ? props.produto.preco : "",
         promocao: props.produto ? props.produto.promocao : "",
