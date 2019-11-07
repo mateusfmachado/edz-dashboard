@@ -176,7 +176,7 @@ class OpcaoVariacao extends Component {
                         <InputSelect
                             name="freteGratis"
                             onChange={(ev) => this.onChangeInput("freteGratis", ev.target.value)}
-                            value={freteGratis} error={erros.peso}
+                            value={freteGratis}
                             opcoes={[
                                 { label: "Sim", value: "sim" },
                                 { label: "Não", value: "nao" },
